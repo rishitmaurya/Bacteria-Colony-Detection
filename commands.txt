@@ -1,0 +1,5 @@
+training = python train_yolov8.py --dataset_dir 22022540 --output_dir ./yolo_runs --epochs 50 --batch 8 --imgsz 640
+
+testing = python infer_and_count.py --model ./yolo_runs/yolov8_finetune_colony/weights/best.pt --image raw_images_test/image3.jpeg --out ./out_sp01_img01.jpg --mode box --conf 0.13 --iou 0.45
+
+testing on folder = python infer_and_count.py --model ./best.pt --image_folder /path/to/images_to_run/ --out_dir ./outputs --mode box
