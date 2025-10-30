@@ -33,6 +33,7 @@ bacteria_colony_count/
 ### 1. Create and activate a virtual environment
 
 ```bash
+## Python = 3.10.0
 python -m venv venv
 # Windows
 venv\Scripts\activate
