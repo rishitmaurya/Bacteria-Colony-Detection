@@ -1,0 +1,42 @@
+image4 = python infer_and_count.py --model ./yolo_runs/yolov8_finetune_colony/weights/best.pt --image raw_images_test/image4.jpeg --out ./out_sp01_img01.jpg --mode box --conf 0.1 --iou 0.55 
+image4.jpeg: 
+detected colonies = 97
+training using Agar dataset :
+python infer_and_count.py --model ./yolo_runs/yolov8_finetune_colony/weights/best.pt --image raw_images_test/image4.jpeg --out ./out_sp01_img01.jpg --mode box --conf 0.65 --iou 0.45 
+image4.jpeg: detected colonies = 122
+
+
+image5 = python infer_and_count.py --model ./yolo_runs/yolov8_finetune_colony/weights/best.pt --image raw_images_test/image5.jpeg --out ./out_sp01_img01.jpg --mode box --conf 0.05 --iou 0.65
+image5.jpeg: 
+detected colonies = 23
+training using Agar dataset :
+python infer_and_count.py --model ./yolo_runs/yolov8_finetune_colony/weights/best.pt --image raw_images_test/image5.jpeg --out ./out_sp01_img01.jpg --mode box --conf 0.45 --iou 0.45
+image5.jpeg: detected colonies = 55
+
+
+image6 = python infer_and_count.py --model ./yolo_runs/yolov8_finetune_colony/weights/best.pt --image raw_images_test/image6.jpeg --out ./out_sp01_img01.jpg --mode box --conf 0.2 --iou 0.65 
+image6.jpeg: 
+detected colonies = 1
+
+
+image1 = python infer_and_count.py --model ./yolo_runs/yolov8_finetune_colony/weights/best.pt --image raw_images_test/image1.jpeg --out ./out_sp01_img01.jpg --mode box --conf 0.2 --iou 0.65
+image1.jpeg: 
+detected colonies = 1
+training using Agar dataset :
+python infer_and_count.py --model ./yolo_runs/yolov8_finetune_colony/weights/best.pt --image raw_images_test/image1.jpeg --out ./out_sp01_img01.jpg --mode box --conf 0.45 --iou 0.45
+image1.jpeg: detected colonies = 35
+
+image2 = python infer_and_count.py --model ./yolo_runs/yolov8_finetune_colony/weights/best.pt --image raw_images_test/image2.jpeg --out ./out_sp01_img01.jpg --mode box --conf 0.05 --iou 0.65
+image2.jpeg: 
+detected colonies = 152
+training using Agar dataset :
+python infer_and_count.py --model ./yolo_runs/yolov8_finetune_colony/weights/best.pt --image raw_images_test/image2.jpeg --out ./out_sp01_img01.jpg --mode box --conf 0.55 --iou 0.45
+image2.jpeg: detected colonies = 300
+
+
+image3 = python infer_and_count.py --model ./yolo_runs/yolov8_finetune_colony/weights/best.pt --image raw_images_test/image3.jpeg --out ./out_sp01_img01.jpg --mode box --conf 0.13 --iou 0.45
+image3.jpeg: 
+detected colonies = 61
+training using Agar dataset :
+python infer_and_count.py --model ./yolo_runs/yolov8_finetune_colony/weights/best.pt --image raw_images_test/image3.jpeg --out ./out_sp01_img01.jpg --mode box --conf 0.45 --iou 0.45
+image3.jpeg: detected colonies = 154
